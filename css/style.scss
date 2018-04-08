@@ -1,0 +1,572 @@
+/*start global frame workl*/
+$mainColor: #F7600F ;
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+.clearfix{
+    clear: both
+}
+.hidden{
+    display: none
+}
+/*end global frame workl*/
+
+/*start header*/
+header{
+    background: url(../images/macbook.jpg) no-repeat 50% 50%;
+    background-size: cover
+}
+header .chev{
+    text-align: center;
+}
+header .chev i {
+    color: #FFF;
+    font-size: 1em;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    padding: 3px 7px;
+    position: relative;
+    bottom: 3.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+header  .chev i:hover{
+    border: 2px solid $mainColor;
+    
+}
+header .overlay {
+    background-color: rgba(41, 46, 52, 0.9);
+    overflow: hidden
+}
+header .overlay  nav{
+    padding-top: 6vh;
+    color: #FFF;
+    text-transform: capitalize
+}
+header .overlay  nav .logo{
+    font-size: 1.25em
+}
+header .overlay  nav .logo span{
+    color: $mainColor;
+    
+}
+header .overlay  nav .me{
+    float: right
+}
+header .overlay  nav .me i{
+    margin-left: 1vh;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: 1px solid #FFF;
+    padding: 0px 7px;
+    border-radius: 5px;
+}
+header .overlay .intro{
+    text-align: center;
+    color: #FFF;
+}
+header .overlay .intro h1{
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-weight: bolder;
+    margin-bottom: 1.5rem
+}
+header .overlay .intro h1 span{
+    color: $mainColor;
+}
+header .overlay .buttons{
+    text-align: center;
+    margin-top: 4rem
+}
+header .overlay .buttons button{
+    background: transparent;
+    border: 1px solid #888;
+    text-transform: uppercase;
+    color: #FFF;
+    min-width: 12rem;
+    padding: 10px 40px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 8px
+    
+}
+header .overlay .buttons button:hover{
+    background-color: $mainColor;
+    border: 1px solid $mainColor
+}
+
+/*end header*/
+
+/*start services*/
+.services {
+    padding: 7rem 0;
+}
+
+.services .col{
+    width: 22%;
+    float: left;
+    text-align: center
+}
+.services .col:nth-child(2),
+.services .col:nth-child(3) {
+    margin: 0 3% 
+}
+.services .col .icon {
+    margin-bottom: 3rem
+}
+.services .col .icon i{
+    font-size: 4.5rem;
+    width: 1em;
+    color: $mainColor;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    padding: 25px 30px;
+    display: inline-block
+    
+}
+.services .col .info h3{
+    color: #3C434D;
+    text-transform: uppercase;
+    font-weight: 500
+}
+.services .col .info p{
+    color: #6D7278;
+    line-height: 1.5em
+}
+/*end services*/
+/*start subscribe*/
+.subs{
+    background: url(../images/tablet.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    height: 300px;
+    position: relative
+}
+.subs .s-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(41, 46, 52, 0.9);
+    text-align: center;
+}
+.subs .s-overlay .tr input{
+    width: 50%;
+    padding: 1rem;
+    border: none;
+    border-radius: 9px;
+    margin-right: 1rem
+}
+.subs .s-overlay .tr button {
+    width: 25%;
+    padding: 1rem;
+    border-radius: 9px;
+    border: none;
+    background: none;
+    background-color: $mainColor;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out
+}
+
+.subs .s-overlay .tr button:hover{
+    background-color: #e8590c;
+}
+
+/*end subscribe*/
+
+/*start our work*/
+.our-work{
+    text-align: center;
+    margin: 2vh 0
+}
+.our-work .heading{
+    padding: 6% 0
+}
+.our-work .heading h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #3C434D
+}
+.our-work .heading h2 span{
+    color: #e8590c
+}
+.our-work .heading p {
+    padding: 0 27%;
+    line-height: 2em;
+    margin-bottom: 0;
+    color: #6D7278
+}
+
+.our-work .project .item{
+    width: 30.7%;
+    float: left;
+    margin:1.3%;
+    position: relative;
+    
+}
+.our-work .project .item:hover .p-overlay{
+    visibility: visible;
+}
+.our-work .project .item .p-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 90, 1, 0.75);
+    border-radius: 8px;
+    visibility:hidden
+}
+
+.our-work .project .p-overlay .info h3{
+    text-transform: uppercase;
+    color: #FFF;
+    padding-top: 12vh;
+    font-size: 1.7em;
+    font-weight: 300;
+    margin-top: 0
+}
+.our-work .project .p-overlay .info p{
+    color: #FFF;
+    line-height: 2em;
+    margin-bottom: 4rem;
+    font-weight: normal;
+    font-size: 0.9em;
+    padding: 0 3vh
+}
+.our-work .project .p-overlay .info a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.2em;
+    padding: 0.8rem 2.8rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 1px solid #FFF
+}
+.our-work .project .p-overlay .info a:hover{
+    background-color: #FFF;
+    color: #e8590c
+}
+.our-work .project .item img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px
+
+}
+.our-work button{
+    margin: 6% 0;
+    border: 1px solid #D9D9DB;
+    border-radius: 10px;
+    background: none;
+    padding: 1rem 4rem;
+    color: #3A434C;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+    cursor: pointer
+}
+.our-work button:hover{
+    background-color: #e8590c;
+    color: #FFF;
+    transition: all 0.5s ease-in-out
+}
+/*end our work*/
+
+/*start testimonials*/
+.testi{
+    background: url(../images/woman-690036.jpg) no-repeat 50% 80%;
+    height: 400px;
+    position: relative;
+}
+
+.testi .t-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(41, 46, 52, 0.9);
+    text-align: center
+}
+.testi .t-overlay .client{
+    color: #FFF;
+    padding: 10.5vh
+}
+.testi .t-overlay .cont{
+    padding-bottom: 1vh
+}
+.testi .t-overlay .cont img {
+    border-radius: 50%;
+    width: 10%;
+}
+.testi .t-overlay .client p{
+    padding: 2vh 25vh;
+    line-height: 4.5vh;
+    font-style: italic;
+    font-size: 1.1em;
+    color: #F4F5F5
+}
+.testi .t-overlay .client span{
+    color: #F4F5F5;
+    text-transform: capitalize
+}
+.testi .t-overlay .ion-chevron-left,
+.testi .t-overlay .ion-chevron-right{
+    position: absolute;
+    top: 50%;
+    color: #787D81;
+    cursor: pointer;
+    
+}
+.testi .t-overlay .ion-chevron-left{
+    left: 10%
+}
+.testi .t-overlay .ion-chevron-right{
+    right: 10%;
+}
+/*end testimonials*/
+/*start our-team*/
+.our-team{
+    text-align: center;
+    padding-bottom: 10vh
+}
+.our-team .heading{
+    margin: 6% 0
+}
+.our-team .heading h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #3C434D
+}
+.our-team .heading h2 span{
+    color: #e8590c
+}
+.our-team .heading p {
+    padding: 0 27%;
+    line-height: 2em;
+    margin-bottom: 0;
+    color: #6D7278
+}
+.our-team .team .memb{
+    width: 25%;
+    float: left;
+    transition: all 0.7s;
+    transform: scale(0.99);
+}
+.our-team .team .memb:hover{
+    transform: scale(1.19);
+}
+
+.our-team .team .memb:hover img{
+    filter: none;
+    border-bottom: 5px solid #e8590c;
+    margin-bottom: -5px;
+    transition: all 0.5s;
+}
+
+.our-team .memb h3{
+    text-transform: uppercase;
+    color: #A5A8AC;
+}
+.our-team .memb:hover h3{
+    color: #484F56
+}
+.our-team .memb:hover p{
+    color: #484F56
+}
+.our-team .team img{
+    width: 266px;
+    height: 293px;
+    border-radius: 10px;
+    filter: gray;
+    filter: grayscale(1)
+}
+.our-team .team .social a{
+    text-decoration: none
+}
+.our-team .team .social i{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    border-radius: 50%;
+    color: #FFF;
+    background-color: #9EA1A6;
+    
+}
+.our-team .team p{
+    color: #A5A8AC;
+}
+.our-team .team .memb:hover .ion-social-facebook {
+    background-color: #3b5998
+}
+.our-team .team .memb:hover .ion-social-twitter {
+    background-color: #1da1f2
+}
+.our-team .team .memb:hover .ion-social-googleplus {
+    background-color: #dd4b39
+}
+/*end our-team*/
+/*start contact*/
+.contact{
+    text-align: center;
+    background: url(../images/city-937541.jpg) no-repeat 50% 80%;
+    position: relative;
+    height: 700px
+}
+.contact .c-overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(41, 46, 52, 0.9);
+}
+.contact .heading{
+    margin: 7% 0
+}
+.contact .heading h2{
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #D0D1D4
+}
+.contact .heading h2 span{
+    color: #e8590c
+}
+.contact .heading p {
+    padding: 0 27%;
+    line-height: 2em;
+    margin-bottom: 0;
+    color: #D0D1D4;
+
+}
+.contact form {
+    width: 70%;
+    margin: auto
+}
+.contact form input:first-of-type{
+    margin-right: 2.3%
+}
+.contact form input{
+    display: inline-block;
+    width: 46.2%;
+    float: left;
+    padding: 1.2% 1.3%;
+    border-radius: 8px;
+    border: none
+}
+
+.contact form textarea{
+    margin-top: 3%;
+    width: 96%;
+    border-radius: 8px;
+    resize: none;
+    padding: 2%;
+    border: none;
+    margin-bottom: 4%
+}
+.contact{
+    margin-top: 2%
+}
+.contact button {
+    float: left;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    background-color: $mainColor;
+    color: #FFF;
+    padding: 1.7% 9%;
+    border-radius: 8px;
+    font-size: .8em;
+    cursor: pointer
+
+}
+.contact .follow{
+    float: right;
+    width: 40%
+}
+.contact .follow i{
+    display: inline-block;
+    margin-right: 5%;
+    color: #FFF;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer
+}
+.contact .follow i:last-of-type{
+    margin-right: 0
+}
+.contact .follow .ion-social-facebook {
+    background-color: #3b5998
+}
+.contact .follow .ion-social-twitter {
+    background-color: #1da1f2
+}
+.contact .follow .ion-social-googleplus {
+    background-color: #dd4b39
+}
+.contact .follow .ion-ios-world-outline {
+    background-color: #ff3399
+}
+.contact .follow .ion-social-github {
+    background-color: #333
+}
+/*end contact*/
+/*start footer*/
+footer{
+    background-color: #3B444D;
+    overflow: hidden;
+    padding: 1% 0;
+    font-size: 0.9em;
+    color: #D0D3D5;
+    text-transform: uppercase
+}
+
+footer .copyright{
+    width: 50%;
+    float: left
+}
+footer .designer{
+    width: 50%;
+    float: right;
+    
+}
+footer .designer p{
+    margin-left: 5%;
+    float: right
+}
+footer .designer p a{
+    color: #FFF;
+    text-decoration: none;
+    
+}
+footer .designer p a span{
+    color: #e8590c
+}
+/*end footer*/
+
+/*
+.md-18 
+.md-24 
+.md-36 
+.md-48
+.md-60
+.md-72
+.md-84
+.md-96
+*/
